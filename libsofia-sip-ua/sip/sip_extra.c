@@ -1293,7 +1293,7 @@ static msg_dup_f sip_p_asserted_identity_dup_one;
 
 msg_hclass_t sip_p_asserted_identity_class[] =
 SIP_HEADER_CLASS(p_asserted_identity, "P-Asserted-Identity", "",
-		 paid_common, append, p_asserted_identity);
+		 paid_common, single, p_asserted_identity);
 
 issize_t sip_p_asserted_identity_d(su_home_t *home, sip_header_t *h,
 				   char *s, isize_t slen)
